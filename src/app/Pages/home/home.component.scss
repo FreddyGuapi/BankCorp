@@ -1,0 +1,188 @@
+.content .carousel img {
+    height: 38rem;
+    width : 100%;
+}
+
+.corsInformation {
+    background-color: #000;
+    color           : #fff;
+    display         : flex;
+    flex-direction  : row;
+    padding         : 2rem;
+    text-align      : center;
+
+    .corsInformationtitel {
+        h1 {
+            color         : #ff4500;
+            text-transform: uppercase;
+        }
+    }
+
+    .corsInformationNumber {
+        h3 {
+            color: #ff4500;
+        }
+
+        .numberAndIcon {
+            display        : flex;
+            flex-direction : row;
+            justify-content: center;
+            color          : #7e7e82;
+
+            p {
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
+
+.cursInformation {
+    display         : flex;
+    padding-top     : 2rem;
+    padding-bottom  : 2rem;
+    flex-direction  : row;
+    background-color: #ddd6e3;
+
+    .cursInformationTitel {
+        display        : flex;
+        flex-direction : column;
+        justify-content: center;
+        margin         : 2rem;
+
+        h2 {
+            color         : #ff4500;
+            text-transform: uppercase;
+        }
+    }
+
+    .cursInformationContent {
+        padding: 1rem;
+
+        a {
+            background-color: #ff4500;
+            color           : #fff;
+            padding         : .5rem 2rem;
+            text-decoration : none;
+            border-radius   : 1rem;
+        }
+    }
+}
+
+
+
+.container .product {
+    margin-top: 2rem;
+
+    .productTitel {
+        text-align   : center;
+        margin-bottom: 2rem;
+    }
+
+    .productInformation {
+        display              : grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows   : repeat(2, auto);
+        width                : 100%;
+        column-gap           : 2rem;
+        row-gap              : 2rem;
+    }
+}
+
+.newsPaper {
+    margin-bottom: 2rem;
+    .newsPaperTitel {
+        text-align   : center;
+        margin-top   : 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .newsPaperInformation {
+        display              : grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows   : repeat(1, auto);
+        width                : 100%;
+        column-gap           : 2rem;
+        row-gap              : 2rem;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .cursInformation {
+        display              : grid;
+        grid-template-columns: repeat(3, 1fr);
+        .cursInformationTitel {
+            grid-column: 1/4;
+            text-align : center;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .cursInformation {
+        grid-template-columns: repeat(2, 1fr);
+        .cursInformationTitel {
+            grid-column: 1/3;
+        }
+    }
+
+    .corsInformation {
+        flex-direction: column;
+    }
+
+    .container .product {
+        .productInformation {
+            display              : grid;
+            grid-template-columns: repeat(2, 1fr);
+            width                : 100%;
+            column-gap           : 2rem;
+            row-gap              : 2rem;
+        }
+    }
+
+    .newsPaper {
+        .newsPaperInformation {
+            display              : grid;
+            grid-template-columns: repeat(2, 1fr);
+            width                : 100%;
+            column-gap           : 2rem;
+            row-gap              : 2rem;
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .cursInformation {
+        grid-template-columns: repeat(1, 1fr);
+
+        .cursInformationTitel {
+            grid-column: 1/2;
+        }
+    }
+
+    .corsInformation {
+        flex-direction: column;
+    }
+
+    .container .product {
+
+        .productInformation {
+            display              : grid;
+            grid-template-columns: repeat(1, 1fr);
+            width                : 100%;
+            column-gap           : 2rem;
+            row-gap              : 2rem;
+        }
+    }
+
+    .newsPaper {
+        .newsPaperInformation {
+            display              : grid;
+            grid-template-columns: repeat(1, 1fr);
+            width                : 100%;
+            column-gap           : 2rem;
+            row-gap              : 2rem;
+        }
+    }
+}

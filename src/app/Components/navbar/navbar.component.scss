@@ -1,0 +1,41 @@
+.navbar {
+    background-color: #000 !important;
+    padding         : 1.5rem 0;
+}
+
+.nav-item {
+    margin-right: 1rem;
+}
+
+a.nav-link.dropdown-toggle,
+.nav-link {
+    color    : #fff;
+    font-size: 1.2rem;
+    padding  : .5rem 1rem;
+}
+
+a.nav-link:hover {
+    transition      : all .6s ease-in-out;
+    background-color: #ff4500;
+    border-radius   : .5rem;
+}
+
+a.dropdown-item:hover {
+    border-left     : .5rem solid #ff4500;
+    background-color: white;
+    color           : #ff4500;
+}
+
+.navbar-nav li:hover>ul.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top       : 0;
+    margin-top: -5px;
+    left      : 100%;
+}

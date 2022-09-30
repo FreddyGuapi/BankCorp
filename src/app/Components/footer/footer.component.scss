@@ -1,0 +1,141 @@
+footer {
+    background-color: #212121;
+    padding-top     : 2rem;
+}
+
+.footer {
+
+    color         : #fff;
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+
+
+    .contact {
+        color: #fff;
+        width: 25%;
+    }
+
+    .information {
+        display       : flex;
+        flex-direction: column;
+        width         : 70%;
+    }
+}
+
+.informationBank {
+    display              : grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    ul {
+        list-style: square;
+        color     : #ff4500;
+
+        a {
+            text-decoration: none;
+            color          : #fff;
+        }
+
+        a:hover {
+            color: #ff4500;
+            ;
+        }
+    }
+
+}
+
+.redesSociales ul {
+    display        : flex;
+    flex-direction : row;
+    list-style     : none;
+    justify-content: space-evenly;
+
+    li {
+        margin: auto 1rem;
+    }
+
+    .facebook svg {
+        color: #332e79;
+    }
+
+    .instagram svg {
+        color: #743fa7;
+    }
+
+    .youtube svg {
+        color: #ff0000;
+    }
+
+    .whatsapp svg {
+        color: #08a808;
+    }
+}
+
+.redesSociales ul {
+
+    .facebook :hover {
+        color     : #58567e;
+        transition: all 1s ease-in-out;
+    }
+
+    .instagram :hover {
+        color     : #8a6fa4;
+        transition: all 1s ease-in-out;
+    }
+
+    .youtube :hover {
+        color     : #fa4040;
+        transition: all 1s ease-in-out;
+    }
+
+    .whatsapp :hover {
+        color     : #40a540;
+        transition: all 1s ease-in-out;
+    }
+}
+
+
+
+@media (max-width: 991px) {
+    .informationBank {
+        display: none;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .redesSociales ul {
+        display              : grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        li {
+            margin: 1rem auto;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+
+    .redesSociales ul {
+        grid-template-columns: repeat(2, 1fr);
+
+        li {
+            margin: 1rem 0;
+
+        }
+    }
+}
+
+
+.developer {
+    background-color: #303030;
+    color           : #a2a2a2;
+    text-align      : center;
+    padding-top     : .5rem;
+    padding-bottom  : .5rem;
+
+    p {
+        margin-bottom: 0;
+    }
+}
